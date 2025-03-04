@@ -37,7 +37,8 @@
 
 /**
  * Initialize the template... mainly little settings.
- */
+
+*/
 function template_init()
 {
 	global $settings, $txt;
@@ -78,7 +79,8 @@ function template_init()
 
 /**
  * The main sub template above the content.
- */
+
+*/
 function template_html_above()
 {
 	global $context, $scripturl, $txt, $modSettings;
@@ -189,12 +191,14 @@ function template_html_above()
 </head>
 <body id="', $context['browser_body_id'], '" class="action_', !empty($context['current_action']) ? $context['current_action'] : (!empty($context['current_board']) ?
 		'messageindex' : (!empty($context['current_topic']) ? 'display' : 'home')), !empty($context['current_board']) ? ' board_' . $context['current_board'] : '', '">
+<div id="outerpagewrap">
 <div id="footerfix">';
 }
 
 /**
  * The upper part of the main template layer. This is the stuff that shows above the main forum content.
- */
+
+*/
 function template_body_above()
 {
 	global $context, $settings, $scripturl, $txt, $modSettings, $maintenance;
@@ -371,14 +375,14 @@ function template_body_above()
 
 	echo (!empty($settings['custom_forum_width'])) ? '<div id="header" style="max-width: ' . $settings['custom_forum_width'] . '">' : '<div id="header">';
 	
-    echo '
+	 echo '
 		<h1 class="forumtitle">
 				<a class="top" href="', $scripturl, '">', empty($context['header_logo_url_html_safe']) ? '<img src="'. $settings['images_url']. '/custom/logo.png" alt="' . $context['forum_name'] . '" title="' . $context['forum_name'] . '" >' : '<img src="' . $context['header_logo_url_html_safe'] . '" alt="' . $context['forum_name'] . '" title="' . $context['forum_name'] . '" >', '</a>
 		</h1>';
 		
 	if (!empty($settings['social_icons_menu_enabled']))
 {		
-    echo'
+	 echo'
 	<div class="social_icons">';
 				if(!empty($settings['facebook_url']))
 				echo '
@@ -386,38 +390,38 @@ function template_body_above()
 
 				if(!empty($settings['twitter_url']))
 				echo '
-		                     <a href="', $settings['twitter_url'] , '" title="' , $txt['twitter_title']  , '"><i class="fab fa-twitter"></i></a>';
+									<a href="', $settings['twitter_url'] , '" title="' , $txt['twitter_title']  , '"><i class="fab fa-twitter"></i></a>';
 
 				if(!empty($settings['youtube_url']))
 				echo '
-		                     <a href="', $settings['youtube_url'] , '" title="' , $txt['youtube_title']  , '"><i class="fab fa-youtube"></i></a>';
+									<a href="', $settings['youtube_url'] , '" title="' , $txt['youtube_title']  , '"><i class="fab fa-youtube"></i></a>';
 							 
 				if(!empty($settings['twitch_url']))
 				echo '
-		                     <a href="', $settings['twitch_url'] , '" title="' , $txt['twitch_title']  , '"><i class="fab fa-twitch"></i></a>';	
+									<a href="', $settings['twitch_url'] , '" title="' , $txt['twitch_title']  , '"><i class="fab fa-twitch"></i></a>';	
 							 
 				if(!empty($settings['discord_url']))
 				echo '
-		                     <a href="', $settings['discord_url'] , '" title="' , $txt['discord_title']  , '"><i class="fab fa-discord"></i></a>';	
+									<a href="', $settings['discord_url'] , '" title="' , $txt['discord_title']  , '"><i class="fab fa-discord"></i></a>';	
 
 				if(!empty($settings['linkedin_url']))
 				echo '
-		                     <a href="', $settings['linkedin_url'] , '" title="' , $txt['linkedin_title']  , '"><i class="fab fa-linkedin"></i></a>';
+									<a href="', $settings['linkedin_url'] , '" title="' , $txt['linkedin_title']  , '"><i class="fab fa-linkedin"></i></a>';
 							 
 				if(!empty($settings['github_url']))
 				echo '
-		                     <a href="', $settings['github_url'] , '" title="' , $txt['github_title']  , '"><i class="fab fa-github"></i></a>';						 
+									<a href="', $settings['github_url'] , '" title="' , $txt['github_title']  , '"><i class="fab fa-github"></i></a>';						 
 							 
 				if(!empty($settings['rss_url']))
 				echo '
-		                     <a href="', $settings['rss_url'] , '" title="' , $txt['rss_title']  , '"><i class="fas fa-rss"></i></a>';
+									<a href="', $settings['rss_url'] , '" title="' , $txt['rss_title']  , '"><i class="fas fa-rss"></i></a>';
 				echo' </div>';
 }
 
 	echo '
 	</div>';
 	
-    // Show the menu here, according to the menu sub template, followed by the navigation tree.
+	 // Show the menu here, according to the menu sub template, followed by the navigation tree.
 	// Load mobile menu here
 	echo '
 				<a class="mobile_user_menu">
@@ -427,7 +431,7 @@ function template_body_above()
 
 				echo (!empty($settings['custom_forum_width'])) ? '<div id="main_menu" style="max-width: ' . $settings['custom_forum_width'] . '">' : '<div id="main_menu">';
 				echo '
-				    <div id="mobile_user_menu" class="popup_container">
+					 <div id="mobile_user_menu" class="popup_container">
 						<div class="popup_window description">
 							<div class="popup_heading">', $txt['mobile_user_menu'], '
 								<a href="javascript:void(0);" class="main_icons hide_popup"></a>
@@ -485,7 +489,8 @@ function template_body_above()
 
 /**
  * The stuff shown immediately below the main content, including the footer
- */
+
+*/
 function template_body_below()
 {
 	global $context, $txt, $settings, $scripturl, $modSettings;
@@ -505,7 +510,7 @@ function template_body_below()
 	echo '
 		<ul>
 			<li class="floatright"><a href="', $scripturl, '?action=help">', $txt['help'], '</a> ', (!empty($modSettings['requireAgreement'])) ? '| <a href="' . $scripturl . '?action=agreement">' . $txt['terms_and_rules'] . '</a>' : '', ' | <a href="#top_section">', $txt['go_up'], ' &#9650;</a></li>
-			<li class="copyright">', theme_copyright(), ' | <span class="themecopyright"><a href="https://www.simplemachines.org/community/index.php?action=profile;u=218416">Burnt Theme By: TwitchisMental</a></span></li>
+			<li class="copyright">', theme_copyright(), ' | <span class="themecopyright">Sage Theme based off of the <a href="https://www.simplemachines.org/community/index.php?action=profile;u=218416">Burnt Theme By: TwitchisMental</a></span></li>
 		</ul>';
 
 	// Show the load time?
@@ -517,15 +522,17 @@ function template_body_below()
 		</div>
 	</div><!-- #footer -->';
 	
-    echo '
-</div><!-- #footerfix -->';
+	 echo '
+</div><!-- #footerfix -->
+</div><!-- #outerpagewrap -->';
 
 
 }
 
 /**
  * This shows any deferred JavaScript and closes out the HTML
- */
+
+*/
 function template_html_below()
 {
 	// Load in any javascipt that could be deferred to the end of the page
@@ -540,7 +547,8 @@ function template_html_below()
  * Show a linktree. This is that thing that shows "My Community | General Category | General Discussion"..
  *
  * @param bool $force_show Whether to force showing it even if settings say otherwise
- */
+
+*/
 function theme_linktree($force_show = false)
 {
 	global $context, $shown_linktree, $scripturl, $txt;
@@ -595,7 +603,8 @@ function theme_linktree($force_show = false)
 
 /**
  * Show the menu up top. Something like [home] [help] [profile] [logout]...
- */
+
+*/
 function template_menu()
 {
 	global $context;
@@ -663,7 +672,8 @@ function template_menu()
  * @param array $button_strip An array with info for displaying the strip
  * @param string $direction The direction
  * @param array $strip_options Options for the button strip
- */
+
+*/
 function template_button_strip($button_strip, $direction = '', $strip_options = array())
 {
 	global $context, $txt;
@@ -728,7 +738,8 @@ function template_button_strip($button_strip, $direction = '', $strip_options = 
  * @param string $list_class Used for integration hooks and as a class name
  * @param string $output_method The output method. If 'echo', simply displays the buttons, otherwise returns the HTML for them
  * @return void|string Returns nothing unless output_method is something other than 'echo'
- */
+
+*/
 function template_quickbuttons($list_items, $list_class = null, $output_method = 'echo')
 {
 	global $txt;
@@ -817,7 +828,8 @@ function template_quickbuttons($list_items, $list_class = null, $output_method =
 
 /**
  * The upper part of the maintenance warning box
- */
+
+*/
 function template_maint_warning_above()
 {
 	global $txt, $context, $scripturl;
@@ -837,6 +849,7 @@ function template_maint_warning_above()
 
 /**
  * The lower part of the maintenance warning box.
+
  */
 function template_maint_warning_below()
 {

@@ -1,36 +1,32 @@
 :root {
-	--admin_legend_bg: rgb(23,32,41);
-	--admin_legend_border: 1px solid rgb(88,118,153);
-	--admin_legend_text_color: rgb(240,206,142);
-	--amt_bg: rgb(212,129,102);
+	--admin_legend_bg: rgb(0,0,0);
+	--admin_legend_border: 1px solid #28db00;
+	--admin_legend_text_color: white;
+	--amt_bg: #28db00;
 	--amt_bg_active: rgb(212,129,102);
-	--amt_color: rgb(0,0,0);
-	--amt_color_hover: rgb(40,40,40);
+	--amt_color: black;
+	--amt_color_hover: black;
 	--bar_bg: rgb(212,129,102);
 	--bar_bg_2: rgb(53, 31, 26);
 	--birthday_text: rgb(113, 7, 152);
 	--black: rgb(0,0,0);
-	--board_icon_bg: rgb(232,143,113);
-	--board_stats_border_color: rgb(232,143,113);
+	--board_icon_bg: rgb(20,20,20);
+	--board_stats_border_color: #28db00;
 	--body_bg: rgb(11,11,11);
 	--body_text: rgb(250,250,250);
-	--button_bg: rgb(124, 76, 60);
-	--button_bg_2: rgb(84,70,66);
+	--button_bg: rgb(20,20,20);
+	--button_bg_2: rgb(20,20,20);
 	--button_bg_active: rgb(255,255,255);
-	--button_bg_gradient: linear-gradient(0deg, rgb(124, 76, 60) 0%, rgb(84,70,66)100%);
+	--button_bg_gradient: none;
 	--button_bg_hover: rgb(255,255,255);
-	--button_border_color: rgb(0,0,0);
+	--button_border_color: #28db00;
 	--button_link: rgb(255,255,255);
 	--calendar_disabled_bg: rgb(55,38,34);
 	--calendar_holiday_bg: rgb(212,129,102);
 	--calendar_holiday_bg_hover: rgb(202, 119, 92);
 	--calendar_main_bg: rgb(211,170,237);
 	--calendar_text: rgb(255,255,255);
-	--cat_bar_border_color: rgb(232,143,113);
-	--cat_bar_box_shadow: 0px 0px 0px 1px rgb(2,4,1);
 	--cat_bar_link: rgb(255,255,255);
-	--cat_bg_color: rgb(67, 57, 55);
-	--cat_bg_img: url(../images/custom/cat_bar_left.png) no-repeat, url(../images/custom/cat_bar_right.png) top right no-repeat, url(../images/custom/cat_bar_mid.png) repeat-x;
 	--code_bg: rgb(31,31,31);
 	--code_border_color: rgb(28,23,32);
 	--code_text_color: rgb(255,255,255);
@@ -39,25 +35,20 @@
 	--footer_border_color: rgb(232,143,113);
 	--footer_box_shadow: inset 0px 2px 3px rgb(0, 0, 0, 0.4);
 	--footer_link: rgb(238,238,238);
-	--header_bg: rgb(212,129,102);
+	--header_bg: rgb(20,20,20);
 	--holiday_text: rgb(2,93,255);
-	--ibst_color: rgb(0,0,0);
+	--ibst_color: white;
 	--infobox_link: rgb(212,129,102);
 	--infobox_text: rgb(230, 226, 221);
-	--input_bg: rgb(212,129,102);
-	--input_bg_hover: rgb(222,139,112); 
-	--input_border: none;
-	--input_border_hover: rgb(36,38,36);
-	--input_box_shadow: 0px 0px 3px 0px rgb(12, 29, 2) inset;
 	--link: rgb(230, 226, 221);
-	--link_hover: rgb(232,143,113);
-	--main_bg2: rgb(84,70,66);
-	--main_bg: rgb(124,76,60);
-	--main_border_cool: rgb(181,115,94) rgb(14,8,6) rgb(14,8,6) rgb(181,115,94);
-	--main_border_cool_dark: rgb(14,8,6);
-	--main_border_cool_light: rgb(181,115,94);
-	--menu_bg2: rgb(66,55,52);
-	--menu_bg: rgb(84,70,66);
+	--link_hover: yellow;
+	--main_bg2: rgb(0,0,0);
+	--main_bg: rgb(0,0,0);
+	--main_border_cool: #28db00;
+	--main_border_cool_dark: #28db00;
+	--main_border_cool_light: #28db00;
+	--menu_bg2: rgb(0, 0, 0);
+	--menu_bg: rgb(0,0,0);
 	--menu_border_color: rgb(232,143,113);
 	--menu_box_shadow: 0px 0px 0px 1px rgb(2,4,1);
 	--menu_link: rgb(242,242,242);
@@ -78,28 +69,26 @@
 	--quote_border_color: rgb(200,200,200);
 	--set_width: 90%;
 	--strong: rgb(250,250,250);
-	--sub_bar_before_border_color: rgb(247,150,118);
-	--sub_bar_border_color: rgb(212,129,102);
+	--sub_bar_before_border_color: #28db00;
+	--sub_bar_border_color: #28db00;
 	--sub_bar_link: rgb(230,226,221);
-	--title_bar_bg2: rgb(66,55,52);
-	--title_bar_bg: rgb(84,70,66);
-	--title_bar_border_color: rgb(232,143,113);
+	--title_bar_bg2: rgb(0,0,0);
+	--title_bar_bg: rgb(0,0,0);
+	--title_bar_border_color: #28db00;
 	--title_bar_link_color: rgb(255,255,255);
 	--title_text_color: rgb(255,255,255);
-	--toggle_switch: rgb(232, 143, 113);
-	--top_menu_bg: rgb(84, 70, 66);
+	--toggle_switch: rgb(92, 202, 76);
+	--top_menu_bg: rgb(0,0,0);
 	--top_menu_link: rgb(240,206,142);
 	--top_menu_link_hover: rgb(255,255,255);
-	--top_section_bg2: rgb(66,55,52);
-	--top_section_bg: rgb(84,70,66);
 	--white: rgb(252,234,234);
-	--window_bg_1: rgb(75,58,54);
-	--window_bg_2: rgb(73,51,46);
+	--window_bg_1: rgb(0,0,0);
+	--window_bg_2: rgb(10,10,10);
 	--window_bg_approve: rgb(90,33,33);
 	--window_bg_hover: rgb(255,255,255,0.1);
 	--window_bg_locked: rgb(73,51,45);
-	--wrapper_bg: rgb(36,34,34);
-  }
+	--input_bg_hover: rgb(30, 30, 30);
+	}
   /* You can find detailed information at https://wiki.simplemachines.org/smf/Curve2_CSS
   /* Index */
   html {
@@ -108,7 +97,7 @@
   }
   body {
 	  background-size: 85px 85px;
-	  background-image: repeating-linear-gradient(45deg, rgb(232, 143, 113) 0px, rgb(232, 143, 113) 1px, #070605 0px, #070605 50%);
+	  background: #000 url("../images/gridbkg.png") top center;
 	  font: 83.33%/150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
 	  color: var(--body_text);
 	  display: flex;
@@ -142,7 +131,8 @@
   input, button, select, textarea {
 	  color: var(--ibst_color);
 	  font: 83.33%/150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
-	  background: var(--input_bg);
+	  background: rgb(20,20,20);
+
 	  outline: none;
 	  border: 1px solid var(--input_border);
 	  vertical-align: middle;
@@ -923,8 +913,11 @@
   }
   
   #main_menu {
-	  background: var(--menu_bg);
-	  background: linear-gradient(180deg, var(--menu_bg) 0%, var(--menu_bg2) 100%);
+	  background-color: #000;
+  box-shadow: 3px 3px 3px #000;
+  border: 1px solid #28db00;
+  margin-bottom: 40px;
+  padding: 7px;
 	  padding: 0px 2px;
   }
   
@@ -1230,13 +1223,17 @@
   /* Box-shadow only on this one. */
   #wrapper {
 	  clear: both;
-	  background: var(--wrapper_bg);
-	  border: none;
 	  position: relative;
-	  padding: 0px 8px;
+background-color: #000;
+  box-shadow: 3px 3px 3px #000;
+  border: 1px solid #28db00;
+  padding: 7px;
+	  margin: -1px auto auto auto;
+	  max-width: var(--set_width);
+	  width: unset;
   }
   /* Set maximum width limit for content */
-  #top_section, #wrapper, #main_menu, #header, #footer {
+  #top_section,  #main_menu, #header, #footer {
 	  margin: 0 auto;
 	  max-width: var(--set_width);
 	  width: unset;
@@ -1245,8 +1242,8 @@
   /* The framing graphics */
   /* The top bar. */
   #top_section {
-	  background: var(--top_section_bg);
-	  background: linear-gradient(180deg, var(--top_section_bg) 0%, var(--top_section_bg2) 100%);
+	  background: #000;
+	  border: 1px solid #28db00;
 	  clear: both;
 	  padding: 0px 4px;
   }
@@ -1286,7 +1283,6 @@
   }
   /* The logo and slogan. */
   #header {
-	  background: url(../images/custom/header_left.png) repeat-y, url(../images/custom/header_right.png) top right repeat, url(../images/custom/header_mid.png) repeat;
 	  min-height: 50px;
 	  padding: 12px 10px 20px 10px;
 	  display: flex;
@@ -1416,7 +1412,7 @@
 	  padding: 0;
   }
   .navigate_section ul {
-	  margin: 0;
+	  margin: -1px 0px 0px 0px;
 	  padding: 0px 5px 3px 5px;
 	  font-size: 0.9em;
 	  overflow: hidden;
@@ -1476,9 +1472,6 @@
   /* The footer with copyright links etc. */
   #footer {
 	  padding: 10px 0;
-	  background: var(--footer_bg);
-	  border-top: 4px solid var(--footer_border_color);
-	  box-shadow: var(--footer_box_shadow);
 	  flex: none;
   }
   
@@ -1541,6 +1534,7 @@
   }
   .quickbuttons > li {
 	  float: left;
+    margin: 0 2px;
   }
   .quickbuttons > li > a, .inline_mod_check {
 	  display: block;
@@ -3902,8 +3896,6 @@
   /* Cat_bar / catbg */
   div.cat_bar {
 	  padding: 2px 0px 0px 0px;
-	  background: var(--cat_bg_img);
-	  background-color: var(--cat_bg_color);
 	  border-radius: 0px;
 	  border: none;
   }
@@ -3964,7 +3956,6 @@
   .title_bar {
 	  border: none;
 	  background: var(--title_bar_bg);
-	  background: linear-gradient(180deg, var(--title_bar_bg) 0%, var(--title_bar_bg2) 100%);
 	  border-radius: 0px;
 	  border-top: 2px solid var(--title_bar_border_color);
 	  border-bottom: 2px solid var(--title_bar_border_color);
@@ -4492,7 +4483,7 @@
   .social_icons i:hover {
 	  transform: rotate(360deg);
   }
-   
+	
   input[type="checkbox"] {
 	filter: hue-rotate(165deg);			
   }
