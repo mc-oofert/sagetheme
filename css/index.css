@@ -10,7 +10,7 @@
 	--bar_bg_2: rgb(53, 31, 26);
 	--birthday_text: rgb(113, 7, 152);
 	--black: rgb(0,0,0);
-	--board_icon_bg: rgb(20,20,20);
+	--board_icon_bg: #28db00;
 	--board_stats_border_color: #28db00;
 	--body_bg: rgb(11,11,11);
 	--body_text: rgb(250,250,250);
@@ -3203,7 +3203,7 @@ background-color: #000;
 	  display: inline;
 	  font-family: "Font Awesome 6 Free";
 	  font-size: 2em;
-	  content: "\f7e4";
+	  content: "\f086";
 	  color: var(--board_icon_bg);
   }
   .board_icon a.board_on::before {
