@@ -47,8 +47,8 @@
 	--main_border_cool: #28db00;
 	--main_border_cool_dark: #28db00;
 	--main_border_cool_light: #28db00;
-	--menu_bg2: rgb(0, 0, 0);
-	--menu_bg: rgb(0,0,0);
+	--menu_bg2: rgb(10, 10, 10);
+	--menu_bg: rgb(10,10,10);
 	--menu_border_color: rgb(232,143,113);
 	--menu_box_shadow: 0px 0px 0px 1px rgb(2,4,1);
 	--menu_link: rgb(242,242,242);
